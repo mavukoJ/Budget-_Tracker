@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Budget Tracker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="page-header">
+    <h1>My Budget Tracker</h1>
+    <p class="subtitle">Track your income and expenses in one place.</p>
+  </header>
+
+  <main>
+
+    <!-- Add Expense section -->
+    <section id="add-expense" class="card">
+      <h2>Add Expense</h2>
+
+      <div class="field">
+        <label for="expense-name">Expense name</label>
+        <input type="text" id="expense-name" placeholder="e.g. Groceries">
+      </div>
+
+      <div class="field">
+        <label for="expense-amount">Amount</label>
+        <input type="number" id="expense-amount" placeholder="0.00">
+      </div>
+
+      <div class="field">
+        <label for="expense-category">Category</label>
+        <select id="expense-category">
+          <option value="">Choose a category</option>
+          <option value="food">Food</option>
+          <option value="transport">Transport</option>
+          <option value="bills">Bills</option>
+          <option value="entertainment">Entertainment</option>
+          <option value="other">Other</option>
+        </select>
+      </div>
+
+      <button type="button">Add expense</button>
+    </section>
+
+    <!-- Your Expenses placeholder -->
+    <section id="expense-list" class="card">
+      <h2>Your Expenses</h2>
+      <p class="placeholder">No expenses yet. Add your first one above.</p>
+    </section>
+
+  </main>
+
+</body>
+</html>
